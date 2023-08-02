@@ -1,53 +1,91 @@
-# IDM-Activator
-this can be use for activating the IDM
-Activation:
-This script applies the registry lock method to activate the Internet Download Manager (IDM).
+   IDM-Activation:
+_________________________________
 
-This method requires Internet at the time of activation.
+ - This script applies the registry lock method to activate the Internet Download Manager (IDM).
 
-IDM updates can be installed directly without having to activate again.
+ - This method requires Internet at the time of activation.
 
-After the activation, if in some cases, the IDM starts to show an activation nag screen, then just run the activation option again.
+ - IDM updates can be installed directly without having to activate again.
 
-Reset IDM Activation / Trial:
-The Internet Download Manager provides 30 days trial period, you can use this script to reset this Activation / Trial period whenever you want.
+ - After the activation, if in some cases, the IDM starts to show an activation nag screen, 
+   then just run the activation option again.
 
-This option also can be used to restore status if in case the IDM reports a fake serial key and other similar errors.
+_________________________________
 
-OS requirement: Windows 7, 8, 8.1, 10 & 11
-How to use it?
-PowerShell
-On Windows 10/11, right-click on the windows start menu and select PowerShell or Terminal.
+   Reset IDM Activation / Trial:
+_________________________________
 
-Copy-paste the below code and press enter
+ - The Internet Download Manager provides 30 days trial period, you can use this script to 
+   reset this Activation / Trial period whenever you want.
+ 
+ - This option also can be used to restore status if in case the IDM reports a fake serial
+   key and other similar errors.
 
-iwr -useb https://raw.githubusercontent.com/CYBERCODERoss/IDM-Activator/main/IAS.ps1 | iex
+_________________________________
 
-You will see the activation options, and follow onscreen instructions.
+   OS requirement:
+_________________________________
 
-That's all.
+ - Project is supported only for Windows 7/8/8.1/10/11 and their Server equivalent.
 
-Project is supported only for Windows 7/8/8.1/10/11 and their Server equivalent.
-- Advanced Info:
-To add a custom name in IDM license info, edit line number 5 in the script file.
-For activation in unattended mode, run the script with /act parameter.
-For reset in unattended mode, run the script with /res parameter.
-To enable silent mode with the above two methods, run the script with /s parameter.
+_________________________________
+
+ - Advanced Info:
+_________________________________
+
+   - To add a custom name in IDM license info, edit line number 5 in the script file.
+   - For activation in unattended mode, run the script with /act parameter.
+   - For reset in unattended mode, run the script with /res parameter.
+   - To enable silent mode with the above two methods, run the script with /s parameter.
+
 Possible accepted values,
 
-"IAS_xxxxxxxx.cmd" /act "IAS_xxxxxxxx.cmd" /res "IAS_xxxxxxxx.cmd" /act /s "IAS_xxxxxxxx.cmd" /res /s
+"IAS_xxxxxxxx.cmd" /act
+"IAS_xxxxxxxx.cmd" /res
+"IAS_xxxxxxxx.cmd" /act /s
+"IAS_xxxxxxxx.cmd" /res /s
 
-- Troubleshooting steps:
-If any other activator was used to activate IDM previously then make sure to properly uninstall it with that same activator (if there is an option), this is especially important if any registry/firewall block method was used.
+_________________________________
 
-Uninstall the IDM from the control panel.
+ - Troubleshooting steps:
+_________________________________
 
-Make sure the latest original IDM setup is used for the installation, you can download it from https://www.internetdownloadmanager.com/download.html
+   - If any other activator was used to activate IDM previously then make sure to properly
+     uninstall it with that same activator (if there is an option), this is especially important
+     if any registry/firewall block method was used.
 
-Now install the IDM and use the activate option in this script if failed then,
+   - Uninstall the IDM from the control panel.
 
-Disable the windows firewall with the script option, this helps in case of leftover entries of previously used activator (some file patch method also creates firewall entries).
+   - Make sure the latest original IDM setup is used for the installation,
+     you can download it from https://www.internetdownloadmanager.com/download.html
 
-Some security programs may block this script, this is false-positive, as long as you downloaded the file from the original post (mentioned below on this page), temporary suspend Antivirus real-time protection, or exclude the downloaded file/extracted folder from scanning.
+   - Now install the IDM and use the activate option in this script if failed then,
 
-If you are still facing any issues, please contact me (mentioned below on this page).
+     - Disable the windows firewall with the script option, this helps in case of leftover entries of
+       previously used activator (some file patch method also creates firewall entries).
+
+     - Some security programs may block this script, this is false-positive, as long as you 
+       downloaded the file from the original post (mentioned below on this page), temporary suspend
+       Antivirus real-time protection, or exclude the downloaded file/extracted folder from scanning.
+
+     - If you are still facing any issues, please contact me (mentioned below on this page).
+
+__________________________________________________________________________________________________
+
+   Credits:
+__________________________________________________________________________________________________
+
+   @Dukun Cabul		- Original researcher of this IDM trial reset and activation logic,
+			  made an Autoit tool for these methods, IDM-AIO_2020_Final
+			  nsaneforums.com/topic/371047--/?do=findComment&comment=1632062
+                         
+   
+_________________________________
+
+   IDM-Activator
+   
+   Homepage:	https://github.com/lstprjct/IDM-Activator
+   
+   Telegram:	https://t.me/nautilusShell
+
+__________________________________________________________________________________________________
