@@ -100,7 +100,7 @@ _________________________________
 
    IDM-Activator
    
-   Homepage:	https://github.com/lstprjct/IDM-Activator
+   Homepage:	https://github.com/CYBERCODERoss/IDM-Activator
    
    Telegram:	https://t.me/nautilusShell
 
